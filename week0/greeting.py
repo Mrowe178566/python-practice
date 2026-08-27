@@ -1,6 +1,6 @@
 # ============================================================
-# CS50P Week 0 practice — 5 problems
-# Rules: blank file, no duck, no notes.
+# Python practice — functions, variables, f-strings
+# Rules: blank file, no help, no notes.
 # Stuck more than 10 minutes? That's a confusion journal entry.
 # ============================================================
 
