@@ -17,3 +17,22 @@
 
 
 # Your code below:
+# 1. Promt user for input
+# 2. Strip letters except first letters
+# 3. Capitilize both letters
+# 4. Print results to console
+def main():
+     full_name = input("Enter your name \n")
+     print(initials(full_name))
+
+def initials(full_name):
+    words = full_name.split()
+
+    first_letter = words[0][0].upper()
+    second_letter = words[1][0].upper()
+
+    return f"{first_letter}.{second_letter}."
+
+
+main()
+

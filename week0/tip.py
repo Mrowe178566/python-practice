@@ -15,3 +15,28 @@
 
 
 # Your code below:
+
+def main():
+    dollars = dollars_to_float(input(("How much was the meal? \n")))
+    percent = percent_to_float(input(("What percentage would you like to tip? \n")))
+    tip = dollars * percent
+    final_amount = tip + dollars
+    print(f"Total: ${final_amount:.2f}")
+
+
+def dollars_to_float(dollars):
+    bill_amount = dollars.replace("$","")
+    final_amount = float(bill_amount)
+    return final_amount
+
+
+
+def percent_to_float(percent):
+    percentage_amount = percent.replace("%","")
+    final_percent = float(percentage_amount) / 100
+    return final_percent
+
+
+
+
+main()
