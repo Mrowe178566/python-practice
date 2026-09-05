@@ -16,5 +16,22 @@
 #
 # Concepts: def, parameters, return vs print
 
+#Notes
+# ask user to input celsius temp
+# convert celsius to fahrenheit (Formula: f = c * 9/5 + 32)
+# print fahrenheit result 
 
 # Your code below:
+def main():
+    celsius = input("Enter celsisus temperature to convert to fahrenheit \n")
+    print(celsius_to_fahrenheit(celsius))
+    
+   
+
+def celsius_to_fahrenheit(celsius):
+    fahrenheit = int(celsius) * 9/5 + 32
+    return fahrenheit
+
+
+
+main()
