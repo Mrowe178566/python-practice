@@ -8,6 +8,8 @@
 # Returns the number doubled.
 #   double(5)    ->  10
 #   double(2.5)  ->  5.0
+def double(n):
+  return n * 2
 
 
 
@@ -17,7 +19,8 @@
 # Returns the area.
 #   area_of_rectangle(4, 5)   ->  20
 #   area_of_rectangle(2.5, 4) ->  10.0
-
+def  area_of_rectangle(width, height):
+ return width * height
 
 
 
@@ -27,6 +30,8 @@
 #   seconds_to_minutes(90)   ->  1.5
 #   seconds_to_minutes(120)  ->  2.0
 
+def seconds_to_minutes(seconds):
+  return seconds / 60
 
 
 
@@ -35,7 +40,9 @@
 # Returns the average of three numbers.
 #   average(3, 4, 5)   ->  4.0
 #   average(10, 20, 0) ->  10.0
-
+def average(a, b, c):
+  return (a + b + c) / 3
+  
 
 
 
@@ -46,3 +53,6 @@
 #   percent_of(50, 50)   ->  100.0
 #
 # Hint: part divided by whole, times 100.
+
+def percent_of(part, whole):
+  return (part / whole) * 100
