@@ -9,6 +9,12 @@
 #   full_name("maia", "rowe")     ->  "Maia Rowe"
 #   full_name("ada", "lovelace")  ->  "Ada Lovelace"
 
+def full_name(first, last):
+    first_name = first.capitalize()
+    last_name = last.capitalize()
+    whole_name = first_name + " " + last_name
+    return whole_name
+
 
 
 
@@ -20,7 +26,9 @@
 #
 # Hint: .split() gives you a list. A negative index counts from the end,
 #       so list[-1] is the last item.
-
+def last_word(sentence):
+    end_of_sentence = sentence.split()[-1]
+    return end_of_sentence
 
 
 
@@ -29,6 +37,9 @@
 # Returns the first and last character stuck together.
 #   first_and_last("python")  ->  "pn"
 #   first_and_last("maia")    ->  "ma"
+def first_and_last(word):
+    return word[0] + word[-1]
+  
 
 
 
@@ -40,7 +51,8 @@
 #   username("hello@gmail.com")   ->  "hello"
 #
 # Hint: .split() takes an argument telling it what to split on.
-
+def  username(email):
+     return email.split("@")[0]
 
 
 
@@ -51,3 +63,6 @@
 #   word_count("hello world")          ->  2
 #
 # Hint: len() tells you how many items are in a list.
+
+def  word_count(sentence):
+    return len(sentence.split())
