@@ -47,6 +47,8 @@ def is_even(n):
 def bigger(a, b):
     if a > b:
         return a
+    else:
+        return b
 
 
 
