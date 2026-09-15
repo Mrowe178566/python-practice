@@ -14,6 +14,11 @@
 #   can_vote(18, True)   ->  True
 #   can_vote(17, True)   ->  False
 #   can_vote(30, False)  ->  False
+def can_vote(age, is_citizen):
+    if age >= 18 and is_citizen:
+        return True
+    else:
+        return False
 
 
 
@@ -27,6 +32,14 @@
 #
 # Hint: lowercase the input first so you only have to compare against one spelling.
 
+def is_weekend(day):
+    day = day.lower()
+    if day == "saturday" or day == "sunday":
+        return True
+    else:
+        return False
+    
+
 
 
 
@@ -38,7 +51,11 @@
 #   same_sign(3, -5)   ->  False
 #
 # Hint: this is two "and" conditions joined by an "or".
-
+def same_sign(a, b):
+     if (a > 0 and b > 0) or (a < 0 and b < 0):
+        return True
+     else:
+        return False
 
 
 
@@ -53,8 +70,15 @@
 #   is_leap_year(2023)  ->  False
 #
 # This is a classic. Check the most specific rule (400) first.
-
-
+def is_leap_year(year):
+    if year % 400 == 0:
+        return True
+    elif year % 100 == 0:
+        return False
+    elif year % 4 == 0:
+        return True
+    else:
+        return False
 
 
 
@@ -71,3 +95,12 @@
 # The trap: check "both" BEFORE checking either one alone, or 15 will
 # match the Fizz branch and stop there.
 # Hint: str(7) turns a number into "7".
+def fizzbuzz(n):
+    if n % 3 == 0 and n % 5 == 0:
+        return  "FizzBuzz"
+    elif n % 3 == 0:
+        return "Fizz" 
+    elif n % 5 == 0:
+        return "Buzz"
+    else:
+        return str(n)
